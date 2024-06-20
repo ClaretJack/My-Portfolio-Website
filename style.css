@@ -10,6 +10,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 html {
   scroll-behavior: smooth;
@@ -37,6 +40,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  width: 100vw;
 }
 
 .nav-links {
@@ -74,6 +78,7 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  background-image: url(./assets/header-background.jpg);
 }
 
 .hamburger-menu {
@@ -153,9 +158,11 @@ a:hover {
 /* Sections */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  /* padding-top: 4vh; */
+  /* height: 96vh; */
+  width: 90vw;
+  justify-self: center;
+  margin-bottom: 12rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -169,7 +176,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  margin-top: 5rem;
+  margin-bottom: 15rem;
 }
 .section__pic-container {
   display: flex;
@@ -293,13 +301,14 @@ section {
 
 .arrow {
   position: absolute;
-  right: -5rem;
+  right: 5rem;
   padding-top: 2.5rem;
 }
 
 .details-container {
   padding: 1rem;
   flex: 1;
+  margin-top: 4rem;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -325,13 +334,28 @@ section {
   position: relative;
 }
 
+.text-experience {
+  display: flex;
+  flex-direction: column;
+}
+
 .me-at-nc {
-  width: 30vw;
+  width: 50vw;
   height: 50vh;
+  object-fit: contain;
 }
 
 .northcoders-logo {
-  width: 40vw;
+  width: 20vw;
+  align-self: center;
+}
+
+.northcoders-section {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .experience-sub-title {
@@ -408,7 +432,7 @@ article {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 20vh;
 }
 
 .contact-info-upper-container {
@@ -444,7 +468,7 @@ article {
 /* Footer Section */
 
 footer {
-  height: 25vh;
+  height: fit-content;
   margin: 0 1rem;
 }
 

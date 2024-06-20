@@ -1,17 +1,13 @@
-@media screen and (min-width: 1201px) {
-  #profile {
-    height: 80vh;
-    margin-bottom: 6rem;
-  }
+@media screen and (min-width: 1200px) {
   .about-container {
     flex-wrap: wrap;
   }
   .about-container {
     margin-top: 0;
   }
-  #projects {
-    margin-top: 38rem;
-  }
+  /* #projects {
+    margin-top: 18rem;
+  } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -21,10 +17,12 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
+
+  /* #experience,
   .experience-details-container {
     margin-top: 2rem;
-  }
+  } */
+
   #profile,
   .section-container {
     display: block;
@@ -36,19 +34,40 @@
   .section-container {
     height: fit-content;
   }
-  section {
+  /* section {
     margin: 0 5%;
-  }
+  } */
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    justify-content: center;
   }
   .about-container {
     margin-top: 0;
   }
-  #about {
-    margin-top: 10rem;
+}
+
+@media screen and (min-width: 801px) {
+  .northcoders-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+  .me-at-nc {
+    width: 40vw;
+  }
+  .northcoders-logo {
+    width: 10vw;
+  }
+  .northcoders-section p {
+    padding-top: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .me-at-nc {
+    width: 90vw;
   }
 }
 
