@@ -1,10 +1,16 @@
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1201px) {
   #profile {
     height: 80vh;
     margin-bottom: 6rem;
   }
   .about-container {
     flex-wrap: wrap;
+  }
+  .about-container {
+    margin-top: 0;
+  }
+  #projects {
+    margin-top: 38rem;
   }
 }
 
@@ -40,6 +46,9 @@
   }
   .about-container {
     margin-top: 0;
+  }
+  #about {
+    margin-top: 10rem;
   }
 }
 
@@ -105,5 +114,8 @@
   }
   .section-container {
     flex-wrap: wrap;
+  }
+  .me-at-nc {
+    width: 90vw;
   }
 }
