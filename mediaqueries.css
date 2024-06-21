@@ -133,4 +133,11 @@
   .me-at-nc {
     width: 90vw;
   }
+  article {
+    width: 7.3rem;
+    font-size: 12px;
+  }
+  article img {
+    width: 22px;
+  }
 }
